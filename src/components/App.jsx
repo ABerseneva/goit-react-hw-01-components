@@ -1,16 +1,19 @@
-export const App = () => {
+import Card from './task-1/card'
+import userJson from '../data/user.json';
+
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className='App'>
+      {<Card user = {userJson} />/* <Card name={userJson.username}
+            {/* tag={userJson.tag}
+            location={userJson.location}
+            avatar={userJson.avatar}
+            followers={userJson.followers}
+            views={userJson.views}
+            likes={userJson.likes} /> */} 
     </div>
-  );
+  )
 };
+
+export default App

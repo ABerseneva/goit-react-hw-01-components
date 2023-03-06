@@ -4,7 +4,6 @@ body {
 
 .profile {
     width: 300px;
-    height: 400px;
     border-radius: 5px;
     box-shadow: 0px 0px 21px -3px rgba(0, 0, 0, 0.62);
     margin: 40px auto;
@@ -20,6 +19,10 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 25px;
+}
+
+.tag {
+    margin: 0;
 }
 
 .avatar {

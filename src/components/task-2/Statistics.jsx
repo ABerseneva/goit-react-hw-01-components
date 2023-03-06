@@ -1,5 +1,5 @@
 import React from "react";
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import StatList from "./StatList";
 import "../task-2/statisticsModule.css"
 
@@ -13,7 +13,7 @@ const Statistics = ({ title, stats }) => {
 
 export default Statistics;
 
-// Statistics.PropTypes = {
-//     title: PropTypes.string,
-//     // stats: PropTypes.array
-// };
+Statistics.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.object)
+};

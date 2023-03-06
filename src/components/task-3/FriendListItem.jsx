@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'
 
 
 function FriendListItem  ({avatar, name, isOnline})  {
@@ -11,3 +12,9 @@ function FriendListItem  ({avatar, name, isOnline})  {
 
 
 export default FriendListItem;
+
+FriendListItem.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool
+};

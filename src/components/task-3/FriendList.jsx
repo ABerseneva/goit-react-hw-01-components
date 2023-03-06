@@ -1,6 +1,7 @@
 import React from "react";
 import FriendListItem from "./FriendListItem";
 import '../task-3/FriendList.css'
+import PropTypes from 'prop-types'
 
 
 const FriendList = ({friends}) => {
@@ -17,4 +18,9 @@ const FriendList = ({friends}) => {
 }
 
 
-export default FriendList
+export default FriendList;
+
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.object),
+};

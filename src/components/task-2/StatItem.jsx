@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 function StatItem({ label, percentage, color }) {
@@ -27,3 +27,10 @@ const Item = styled.li`
 const Text = styled.span`
   color: white;
 `;
+
+
+StatItem.propTypes = {
+  color: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number
+};

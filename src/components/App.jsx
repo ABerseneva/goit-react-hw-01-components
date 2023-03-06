@@ -2,7 +2,7 @@ import Card from './task-1/card'
 import userJson from '../data/user.json';
 import Statistics from './task-2/Statistics';
 import dataJson from '../data/data.json';
-// import FriendList
+import FriendList from './task-3/FriendList';
 import friendsJson from '../data/friends.json'
 
 

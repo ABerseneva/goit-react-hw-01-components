@@ -48,5 +48,5 @@ const TableHeader = styled.th`
 
 
 TransactionHistory.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.object),
+    friends: PropTypes.arrayOf(PropTypes.object),
 };

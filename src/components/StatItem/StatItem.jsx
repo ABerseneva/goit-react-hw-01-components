@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
 
 function StatItem({ label, percentage, color }) {
   return (
@@ -13,6 +12,12 @@ function StatItem({ label, percentage, color }) {
 }
 
 export default StatItem;
+
+StatItem.propTypes = {
+  color: PropTypes.string,
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};
 
 const Item = styled.li`
   width: calc(100% / 5);
@@ -27,10 +32,3 @@ const Item = styled.li`
 const Text = styled.span`
   color: white;
 `;
-
-
-StatItem.propTypes = {
-  color: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number
-};
